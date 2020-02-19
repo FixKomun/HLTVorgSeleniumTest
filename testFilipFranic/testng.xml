@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="AllTestsSuite">
+    <test name="HLTV Selenium test">
+
+        <!--Running test on different browsers (Firefox,Chrome or IE) by changing the value
+         shown in comments below -->
+        <!-- <parameter name="browser" value="Firefox"></parameter> -->
+          <parameter name="browser" value="Chrome"></parameter>
+        <!--  <parameter name="browser" value="InternetExplorer"></parameter> -->
+        <classes>
+            <class name="HltvTests.HltvTestBase"></class>
+        </classes>
+    </test>
+</suite>
+
+<!--Parallel testing on all the browsers (not implemented in original code)
+
+<suite name="Parallel suite" parallel="tests">
+<test name="FirefoxTest">
+<parameter name="browser" value="Firefox"></parameter>
+<classes>
+    <class name="HltvTests.HltvTestBase"></class>
+</classes>
+</test>
+<test name="ChromeTest">
+    <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+        <class name="HltvTests.HltvTestBase"></class>
+    </classes>
+</test>
+<test name="InternetExplorerTest">
+    <parameter name="browser" value="InternetExplorer"></parameter>
+    <classes>
+        <class name="HltvTests.HltvTestBase"></class>
+    </classes>
+</test>
+</suite>
+-->
