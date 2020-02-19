@@ -1,4 +1,4 @@
-# HLTVSeleniumTest
+# HLTVorgSeleniumTest
 
 ## Selenium
 
